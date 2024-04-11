@@ -3,13 +3,12 @@ import webbrowser
 from tkinter import ttk
 import random
 
-anime_list = ["a"]#put your music link
 
 def anime():
-    x = 0
-    for x in range(0, len(anime_list)):
-        return anime_list[x]
+    return #your link
 
+def party():
+    return #your link
 
 def start_music(url):
     webbrowser.open(url)
@@ -28,7 +27,7 @@ button1 = ttk.Button(root, text="anime music", command=lambda: start_music(anime
 button1.grid(column=5, row=1)
 
 # Create and place the button 
-button2 = ttk.Button(root, text="party music", command=lambda: start_music("Put your party music URL here"))
+button2 = ttk.Button(root, text="party music", command=lambda: start_music(party()))
 button2.grid(column=5, row=2)
 
 # Create and place the button 
